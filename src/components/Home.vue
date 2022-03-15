@@ -1,7 +1,7 @@
 <template>
     <Header :item="brandItems[0]"/>
     <div v-if="cardsLoading" class="flex-1 my-20">
-      <div class="w-10 h-10 border-4 border-red-600 border-t-transparent border-solid rounded-full animate-spin mx-auto"></div>
+      <div class="w-10 h-10 border-4 border-green-600 border-t-transparent border-solid rounded-full animate-spin mx-auto"></div>
     </div>
     <main v-else class="flex-1 mx-2 sm:mx-0">
       <div class="flex-1 mb-16">
@@ -17,14 +17,14 @@
 
 <script setup>
 import ProductCard from "../components/ProductCrad.vue";
-import Header from "../components/Header.vue";
+import Header from "./Header.vue";
 import Footer from "../components/Footer.vue";
 import { ref } from "vue";
 
-const docId = "r3wHCIbocr";
+const docId = "_-Dnd-FkLb";
 const brandTableId = "grid-5s_DTzk4lU";
 const cardsTableId = "grid-OxkfyQYjSp";
-const token = "d5b1f114-1d0a-45af-9138-d6b75d520488";
+const token = "1aa6c074-6bd5-4e6d-9d94-05266516b8a9";
 const brandUrl = `https://coda.io/apis/v1/docs/${docId}/tables/${brandTableId}/rows`;
 const cardsUrl = `https://coda.io/apis/v1/docs/${docId}/tables/${cardsTableId}/rows`;
 const cardsLoading = ref(true);
